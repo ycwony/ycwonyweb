@@ -1,41 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ycwony</title>
     <style>
-        *{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh; /* 화면 높이를 100%로 설정, 페이지 길이 늘어날 수 있도록 수정 */
             text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
             background-color: aliceblue;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        h2{
+            padding: 30px;
+        }
+        .content {
+            text-align: center;
+        }
+
+        /* 애니메이션 설정 */
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-15px);
+            }
+            50% {
+                transform: translateX(15px);
+            }
+            75% {
+                transform: translateX(-15px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* 이미지에 애니메이션 적용 */
+        .shaking-image {
+            animation: shake 1s ease-in-out infinite;
+        }
+
+        /* marquee 스타일 */
+        marquee {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 16/9; /* 비율에 맞게 크기 조정 */
+        }
+
+        /* 입력폼과 버튼 스타일 */
+        input {
+            margin: 10px;
+        }
+
+        button {
+            margin: 10px;
         }
     </style>
-
 </head>
 <body>
-    <marquee>아 파트아파트 (ง 🕶 )ว 아 파트아파트 ٩( 🕶 )۶ 아 파트아파트 (ง🕶 )ว 아 파트아파트 ( 🕶 و(و</marquee>
-    <img src="./듀.jpeg">
-   <h2>
-    <p>
-        안녕하세요 저는 윤채원입니다 ~~~
-        다들 반가워요
-    </p>
-</h2>
-
-    <h3>
-        오늘의 점심은 뭔가요?
-    </h3>
-    <img src="./마라탕.jpeg">
-    <br>
-
-    <marquee>
-        말라ㅏ~~~~~~~~~~~~~~~~탕~~~~~~~~~~~~!
-    </marquee>
-
-    <br>
-
-    <img src="./mara.jpeg">
-
+    <marquee scrollamount="12">제이름은 윤채원 영어로는 Yoon Chaiwon 입니다. e 아니라 i 맞아요</marquee>
+    <h1>✻ YCWONY... ✻</h1>
+    <div class="content">
+        2003년08월25일생 23살입니다<br> <i>윤*열 나이로는 아직 창창한 21살!!!!!!!!!!!</i><br><a href="https://www.instagram.com/ycwony/" target="_blank">@ycwony</a>
+        <img src="meme.png" width="500" height="500">
         
+        ✳︎↑↑↑↑↑✳︎
+        <h3><select>
+            <option>네</option>
+            <option>나가세요</option>
+        </select></h3>
+        <br>
+        
+        <br>
+        자유롭게 입력하세요 악플은 금지 ~
+        <br>
+        <input>
+        <button>♥︎</button>
+        <hr>
+        <h2>최근에 발견한 흥미로운 것을 공유합니다</h2>
+        그냥 문어가 아니에요!!!!!!
+        
+  
+        <img src="robot.png" width="800" height="400" class="shaking-image">
+        <br>
+        Octobot........
+    </div>
+    <br>
+    옥토봇(Octobot)은 하버드대학 연구팀이 만든 자율형 로봇이다.<br> 눈길을 끄는 건 딱딱한 부품을 이용하지 않은 채 부드러운 재료만으로 전신을 만들었다는 것.
+    <br>
+
+    <marquee scrollamount="12" style="font-size: 30px"> wowwowwowwowowowowowowowowowow!!!!!!</marquee>
+    
+    <!-- Iframe 비율에 맞춰 설정 -->
+    <iframe src="https://www.youtube.com/embed/1vkQ3SBwuU4?si=A7KM-nWh2QxLQi0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
